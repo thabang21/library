@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container row">
+        <h1>Book Library</h1>
+
+        <ul class="nav-list">
+            <li class="list-item"><a href="#">Home</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    
+    <div class="container">
+        <form id="libraryForm">
+            <label for="name">Book Name</label>
+            <input type="text" id="name" class="bookName">
+          <br>
+          <label for="author">Author</label>
+          <input type="text" id="author" class="bookAuthor">
+          <br>
+         
+          <h3>Type of book</h3>
+          <input type="radio" name="type" id="fiction" value="Fiction">
+          <label for="fiction">Fiction</label>
+       <br>
+          <input type="radio" name="type" id="computer" value="Computer Programming">
+          <label for="computer">Computer Programming</label>
+          <br>
+          <input type="radio" name="type" id="cooking" value="Cooking">
+          <label for="cooking">Cooking</label>
+
+          <br>
+
+          <!-- <input type="submit" id="addBook"> -->
+          <button type="submit" id="addBook">Add Book</button>
+
+        </form>
+    </div>
+    <hr />
+
+    <div class="container">
+        <div id="message"></div>
+        <div class="header">
+            <p>Book Name</p>
+            <p>Author</p>
+            <p>Type</p>
+            <p></p>
+        </div>
+        <div id="library">
+            <!-- <div class="displayBook">
+                <p>Herry Potter</p>
+                <p>Dev</p>
+                <p>fiction </p>
+                <button id="delete">Delete</button>
+              
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
